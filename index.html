@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <header>
+              <h1>Створіть новий колір</h1>
+            </header>
+        
+            <main>
+              <form id="color-form">
+                <label for="color-name">Назва:</label>
+                <input type="text" id="color-name" required>
+                <span id="name-error" class="error"></span><br>
+        
+                <label for="color-type">Тип:</label>
+                <select id="color-type" required>
+                  <option value="RGB">RGB</option>
+                  <option value="RGBA">RGBA</option>
+                  <option value="HEX">HEX</option>
+                </select><br>
+        
+                <label for="color-code">Код кольору:</label>
+                <input type="text" id="color-code" required>
+                <span id="code-error" class="error"></span><br>
+        
+                <button type="button" onclick="saveColor()">Save</button>
+              </form>
+        
+              <section id="color-list">
+                <h2>Вибрані кольори</h2>
+                <div class="color-list-container"></div>
+              </section>
+            </main>
+          </div>
+        
+    <script src="js/script.js"></script>
+</body>
+</html>
